@@ -1,0 +1,1 @@
+Go Binary selfupdating module.
