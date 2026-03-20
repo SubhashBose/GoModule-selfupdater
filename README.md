@@ -1,13 +1,13 @@
 # Go Binary self-updating module.
 
-This module automates the checking of the latest version from the Github relase page. If a newer version is found, it will download the appropriate binary for the OS and architecture, and will self-update the executing binary.
+This module automates the checking of the latest version from the GitHub release page. If a newer version is found, it will download the appropriate binary for the OS and architecture, and will self-update the executing binary.
 
 To configure the required parameters
 ```go
 cfg := selfupdate.Config{
-		RepoURL:        "https://github.com/SubhashBose/RouteMUX",
-		BinaryPrefix:   "routemux-",
-		OSSep:          "-",
+		RepoURL:        "https://github.com/SubhashBose/RouteMUX",   // Github repo containig the binary releases
+		BinaryPrefix:   "routemux-",   // Prefix in the release binary file names to match with 
+		OSSep:          "-",           // Separator between OS and Arch in release binary file name
 		CurrentVersion: version,       // version variable contains the current version of the binary
 		// HTTPClient: myCustomClient, // optional
 	}
